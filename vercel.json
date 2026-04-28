@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [{ "src": "public/**", "use": "@vercel/static" }],
+  "routes": [
+    { "src": "/dallas", "dest": "public/dallas/index.html" },
+    { "src": "/dallas/how-it-works", "dest": "public/dallas/how-it-works.html" },
+    { "src": "/dallas/terms", "dest": "public/dallas/terms.html" },
+    { "src": "/dallas/privacy", "dest": "public/dallas/privacy.html" },
+    { "src": "/dallas/contractor-terms", "dest": "public/dallas/contractor-terms.html" },
+    { "src": "/denver", "dest": "public/denver/index.html" },
+    { "src": "/denver/how-it-works", "dest": "public/denver/how-it-works.html" },
+    { "src": "/denver/terms", "dest": "public/denver/terms.html" },
+    { "src": "/denver/privacy", "dest": "public/denver/privacy.html" },
+    { "src": "/denver/contractor-terms", "dest": "public/denver/contractor-terms.html" },
+    { "src": "/contractors", "dest": "public/contractors.html" },
+    { "src": "/(.*)", "dest": "public/$1" }
+  ]
+}

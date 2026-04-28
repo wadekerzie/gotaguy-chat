@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GotaGuy – Home Repair in McKinney TX | Just Text Us</title>
+  <meta name="description" content="Need something fixed in McKinney or Collin County? Text GotaGuy. Electrical, plumbing, HVAC, appliances, pool equipment, pest control, drywall, painting and more. Trusted tradespeople, same-day repairs, pay only when done.">
+  <meta property="og:title" content="GotaGuy – Home Repair in McKinney TX | Just Text Us">
+  <meta property="og:description" content="Need something fixed in McKinney or Collin County? Text GotaGuy. Electrical, plumbing, HVAC, appliances, pool equipment, pest control, drywall, painting and more. Trusted tradespeople, same-day repairs, pay only when done.">
+  <meta property="og:type" content="website">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* NAV */
+    nav {
+      border-bottom: 1px solid #e5e5e5;
+      padding: 16px 0;
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 48px;
+      width: auto;
+      display: block;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 48px 0 40px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #1a1a1a;
+      margin-bottom: 16px;
+    }
+
+    .hero .subheadline {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+
+    .cta-button {
+      display: block;
+      width: 100%;
+      padding: 20px 24px;
+      background: #1D9E75;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.35rem;
+      font-weight: 700;
+      border-radius: 10px;
+      text-align: center;
+      letter-spacing: 0.01em;
+      box-shadow: 0 2px 8px rgba(29, 158, 117, 0.3);
+      transition: background 0.2s;
+    }
+
+    .cta-button:hover {
+      background: #178a65;
+    }
+
+    .cta-sub {
+      margin-top: 12px;
+      font-size: 0.875rem;
+      color: #888;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 40px 0;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #1a1a1a;
+    }
+
+    /* HOW IT WORKS */
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .step {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .step-icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      background: #e8f5ef;
+      color: #1D9E75;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .step-content h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .step-content p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    /* SOCIAL PROOF */
+    .social-proof {
+      padding: 0 0 40px;
+    }
+
+    .social-proof blockquote {
+      border-left: 3px solid #1D9E75;
+      padding: 16px 20px;
+      background: #f9fafb;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    .social-proof .proof-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #888;
+      margin-bottom: 8px;
+      font-style: normal;
+    }
+
+    /* TRADES */
+    .trades-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .trade-pill {
+      padding: 8px 18px;
+      background: #f0f0f0;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .zip-pill {
+      padding: 6px 14px;
+      background: #f0f0f0;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #555;
+    }
+
+    .trades-note {
+      font-size: 0.9rem;
+      color: #777;
+      line-height: 1.5;
+    }
+
+    /* SERVICE AREA */
+    .service-area p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* TRUST */
+    .trust-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .trust-check {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: #e8f5ef;
+      color: #1D9E75;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    /* FOR CONTRACTORS */
+    .contractors {
+      background: #fafafa;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 32px 0;
+    }
+
+    .contractors h2 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .contractors p {
+      font-size: 0.95rem;
+      color: #777;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .contractors a {
+      color: #1D9E75;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .contractors a:hover {
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 32px 0;
+      text-align: center;
+    }
+
+    .footer-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    .footer-contact {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 12px;
+    }
+
+    .footer-links {
+      font-size: 0.85rem;
+      color: #aaa;
+      margin-bottom: 8px;
+    }
+
+    .footer-links a {
+      color: #888;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+
+    /* DESKTOP */
+    @media (min-width: 640px) {
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+
+      .cta-button {
+        width: auto;
+        display: inline-block;
+        padding: 18px 48px;
+      }
+
+      .hero {
+        padding: 64px 0 48px;
+      }
+
+      section {
+        padding: 48px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="container">
+      <a class="logo" href="/dallas">
+        <img src="/Gotaguy_Image.jpg" alt="GotaGuy" />
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Need something fixed? Text (469) 273-6216</h1>
+      <p class="subheadline">Trusted tradespeople in McKinney and Collin County. One text gets you a quote. Pay nothing until the job is done.</p>
+      <a class="cta-button" href="sms:+14692736216&body=Hi, I need something fixed!">Text GotaGuy Now</a>
+      <p class="cta-sub">Or text +1 (469) 273-6216 directly</p>
+      <p class="cta-sub">On a computer? Text (469) 273-6216 from your phone and we'll take it from there.</p>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-icon">1</div>
+          <div class="step-content">
+            <h3>Text us what's broken</h3>
+            <p>Describe the problem in plain English. No forms, no apps, no accounts.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-icon">2</div>
+          <div class="step-content">
+            <h3>Get a price range instantly</h3>
+            <p>We ask a few quick questions and give you a fair quote range for your area.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-icon">3</div>
+          <div class="step-content">
+            <h3>A trusted pro shows up</h3>
+            <p>We match you with a vetted local contractor. Your card is not charged until you confirm the work is complete.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <div class="social-proof">
+    <div class="container">
+      <blockquote>
+        <p class="proof-label">How it usually goes</p>
+        Maria in McKinney texted at 8pm about a leaking garbage disposal. Had a contractor confirmed by 8:12pm. Paid $175 when the job was done.
+      </blockquote>
+    </div>
+  </div>
+
+  <!-- TRADES WE HANDLE -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Trades We Handle</h2>
+      <div class="trades-list">
+        <span class="trade-pill">Electrical</span>
+        <span class="trade-pill">Plumbing</span>
+        <span class="trade-pill">HVAC</span>
+        <span class="trade-pill">Handyman</span>
+        <span class="trade-pill">Appliances</span>
+        <span class="trade-pill">Drywall</span>
+        <span class="trade-pill">Painting</span>
+        <span class="trade-pill">Sprinkler</span>
+        <span class="trade-pill">Garage Door</span>
+        <span class="trade-pill">Pool Equipment</span>
+        <span class="trade-pill">Pest Control</span>
+        <span class="trade-pill">Landscaping</span>
+        <span class="trade-pill">Fencing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="service-area">
+    <div class="container">
+      <h2 class="section-title">Service Area</h2>
+      <p>Serving McKinney, Allen, Plano, Frisco, Prosper, Celina, Wylie and surrounding Collin County.</p>
+    </div>
+  </section>
+
+  <!-- SUPPORTED ZIP CODES -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Supported ZIP Codes</h2>
+      <div class="trades-list">
+        <span class="zip-pill">75069</span>
+        <span class="zip-pill">75070</span>
+        <span class="zip-pill">75071</span>
+        <span class="zip-pill">75072</span>
+        <span class="zip-pill">75002</span>
+        <span class="zip-pill">75013</span>
+        <span class="zip-pill">75023</span>
+        <span class="zip-pill">75024</span>
+        <span class="zip-pill">75025</span>
+        <span class="zip-pill">75026</span>
+        <span class="zip-pill">75074</span>
+        <span class="zip-pill">75075</span>
+        <span class="zip-pill">75086</span>
+        <span class="zip-pill">75093</span>
+        <span class="zip-pill">75094</span>
+        <span class="zip-pill">75078</span>
+        <span class="zip-pill">75009</span>
+        <span class="zip-pill">75098</span>
+        <span class="zip-pill">75048</span>
+        <span class="zip-pill">75409</span>
+        <span class="zip-pill">75454</span>
+        <span class="zip-pill">75407</span>
+        <span class="zip-pill">75166</span>
+        <span class="zip-pill">75080</span>
+        <span class="zip-pill">75082</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST SIGNALS -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Why GotaGuy</h2>
+      <div class="trust-list">
+        <div class="trust-item">
+          <div class="trust-check">&#10003;</div>
+          <span>Every contractor is personally vetted by our team</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-check">&#10003;</div>
+          <span>Your card is authorized upfront and captured only when you say the job is done</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-check">&#10003;</div>
+          <span>Local team, AI-powered response, real contractors</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR CONTRACTORS -->
+  <div class="contractors">
+    <div class="container">
+      <h2>Are you a trusted tradesperson?</h2>
+      <p>We send pre-scoped jobs to your phone. You pick the ones you want.</p>
+      <p>Text CONTRACTOR to (469) 273-6216 to get started.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p class="footer-name">GotaGuy &ndash; McKinney, TX</p>
+      <p class="footer-contact">Questions? Text us at +1 (469) 273-6216</p>
+      <p class="footer-links"><a href="/dallas/privacy">Privacy Policy</a> &middot; <a href="/dallas/terms">Terms &amp; Conditions</a> &middot; <a href="/dallas/contractor-terms">Contractor Terms</a></p>
+      <p class="footer-copy">&copy; 2026 GotaGuy. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
