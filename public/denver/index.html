@@ -92,6 +92,27 @@
       background: #178a65;
     }
 
+    .cta-secondary {
+      display: block;
+      width: 100%;
+      margin-top: 14px;
+      padding: 14px 24px;
+      background: transparent;
+      color: #1D9E75;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 10px;
+      text-align: center;
+      border: 2px solid #1D9E75;
+      letter-spacing: 0.01em;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .cta-secondary:hover {
+      background: #e8f5ef;
+    }
+
     .cta-sub {
       margin-top: 12px;
       font-size: 0.875rem;
@@ -313,6 +334,14 @@
       color: #aaa;
     }
 
+    .stripe-badge {
+      font-size: 0.8rem;
+      color: #aaa;
+      margin-top: 20px;
+      text-align: center;
+      letter-spacing: 0.01em;
+    }
+
     /* DESKTOP */
     @media (min-width: 640px) {
       .hero h1 {
@@ -323,6 +352,12 @@
         width: auto;
         display: inline-block;
         padding: 18px 48px;
+      }
+
+      .cta-secondary {
+        width: auto;
+        display: inline-block;
+        padding: 12px 40px;
       }
 
       .hero {
@@ -350,10 +385,11 @@
   <section class="hero">
     <div class="container">
       <h1>Need something fixed? Text (720) 821-3271</h1>
-      <p class="subheadline">Trusted tradespeople in Aurora and the Denver metro. One text gets you a quote. Pay nothing until the job is done.</p>
+      <p class="subheadline">Trusted tradespeople in Aurora, Denver and surrounding areas. One text gets you a quote. Pay nothing until the job is done.</p>
       <a class="cta-button" href="sms:+17208213271&body=Hi, I need something fixed!">Text GotaGuy Now</a>
       <p class="cta-sub">Or text +1 (720) 821-3271 directly</p>
       <p class="cta-sub">On a computer? Text (720) 821-3271 from your phone and we'll take it from there.</p>
+      <a class="cta-secondary" href="/denver/how-it-works">Contractors — click here</a>
     </div>
   </section>
 
@@ -471,6 +507,7 @@
           <span>Local team, AI-powered response, real contractors</span>
         </div>
       </div>
+      <p class="stripe-badge">Payment processing provided by <span style="color:#635BFF;font-weight:600;">Stripe</span></p>
     </div>
   </section>
 
