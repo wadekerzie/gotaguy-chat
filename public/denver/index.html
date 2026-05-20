@@ -368,7 +368,180 @@
         padding: 48px 0;
       }
     }
+
+    /* HERO EYEBROW */
+    .hero-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #1D9E75;
+      margin-bottom: 12px;
+    }
+
+    /* COMPARISON SECTION */
+    .comparison-section {
+      padding: 48px 0;
+      border-top: 1px solid #eee;
+    }
+
+    .comparison-container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .comparison-headline {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .comparison-subhead {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 32px;
+      text-align: center;
+      line-height: 1.6;
+      max-width: 620px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 20px;
+      align-items: start;
+    }
+
+    .panel-old {
+      background: #f5f0e8;
+      border: 0.5px solid #d4c9b0;
+      border-radius: 10px;
+      padding: 24px;
+    }
+
+    .panel-old-header {
+      margin-bottom: 18px;
+    }
+
+    .panel-old-header h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #6b5f4a;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+
+    .panel-old-header p {
+      font-size: 0.78rem;
+      color: #9c8e76;
+    }
+
+    .old-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .old-step {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.875rem;
+      color: #7a6d58;
+    }
+
+    .old-step-num {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      background: #ede5d4;
+      border: 1px solid #c4b89e;
+      color: #8a7a62;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+
+    .panel-new {
+      background: #e6f5ef;
+      border: 1.5px solid #1D9E75;
+      border-radius: 10px;
+      padding: 24px;
+    }
+
+    .panel-new-header {
+      margin-bottom: 18px;
+    }
+
+    .panel-new-header h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #1D9E75;
+      margin-bottom: 4px;
+    }
+
+    .panel-new-header p {
+      font-size: 0.78rem;
+      color: #3a8c64;
+    }
+
+    .new-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .new-step {
+      background: #fff;
+      border-radius: 8px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .new-step-icon {
+      font-size: 1.2rem;
+      color: #1D9E75;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .new-step-text h4 {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 2px;
+    }
+
+    .new-step-text p {
+      font-size: 0.78rem;
+      color: #555;
+    }
+
+    .comparison-footer-line {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #777;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 639px) {
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 </head>
 <body>
 
@@ -384,12 +557,81 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <h1>Your home, fixed fast. Just text us.</h1>
-      <p class="subheadline">Trusted local pros in Aurora, Denver and surrounding areas. One text gets you a quote. Pay nothing until the job is done.</p>
+      <p class="hero-eyebrow">Aurora &amp; Denver Metro</p>
+      <h1>Don't overthink it. Home repairs are a text away.</h1>
+      <p class="subheadline">Trusted tradespeople in Aurora and the Denver Metro. One text gets you a price range. Pay via Stripe only when the job is done.</p>
       <a class="cta-button" href="sms:+17208213271&body=Hi, I need something fixed!">Text GotaGuy Now</a>
-      <p class="cta-sub">Or text +1 (720) 821-3271 directly</p>
+      <p class="cta-sub">Or text (720) 821-3271 directly</p>
       <p class="cta-sub">On a computer? Text (720) 821-3271 from your phone and we'll take it from there.</p>
       <a class="cta-secondary" href="/denver/how-it-works">Contractors — click here</a>
+    </div>
+  </section>
+
+  <!-- COMPARISON SECTION -->
+  <section class="comparison-section">
+    <div class="comparison-container">
+      <h2 class="comparison-headline">Other apps make you work for it.</h2>
+      <p class="comparison-subhead">Angi's, Thumbtack, and every other app-based home repair service requires you to jump through hoops before anyone lifts a tool. GotaGuy requires one thing: a text.</p>
+      <div class="comparison-grid">
+
+        <!-- LEFT PANEL: The old way -->
+        <div class="panel-old">
+          <div class="panel-old-header">
+            <h3>Angi's, Thumbtack, or any app-based service</h3>
+            <p>What they require before anything gets fixed</p>
+          </div>
+          <div class="old-steps">
+            <div class="old-step"><div class="old-step-num">1</div><span>Download the app</span></div>
+            <div class="old-step"><div class="old-step-num">2</div><span>Create an account</span></div>
+            <div class="old-step"><div class="old-step-num">3</div><span>Create a password</span></div>
+            <div class="old-step"><div class="old-step-num">4</div><span>Verify your email</span></div>
+            <div class="old-step"><div class="old-step-num">5</div><span>Fill out a job description form</span></div>
+            <div class="old-step"><div class="old-step-num">6</div><span>Wait for contractors to reach out</span></div>
+            <div class="old-step"><div class="old-step-num">7</div><span>Field multiple calls and bids</span></div>
+            <div class="old-step"><div class="old-step-num">8</div><span>Pick someone. Hope for the best.</span></div>
+          </div>
+        </div>
+
+        <!-- RIGHT PANEL: GotaGuy way -->
+        <div class="panel-new">
+          <div class="panel-new-header">
+            <h3>GotaGuy</h3>
+            <p>No app. No account. No password. Ever.</p>
+          </div>
+          <div class="new-steps">
+            <div class="new-step">
+              <i class="ti ti-message new-step-icon"></i>
+              <div class="new-step-text">
+                <h4>Text what's broken</h4>
+                <p>That's the whole process.</p>
+              </div>
+            </div>
+            <div class="new-step">
+              <i class="ti ti-currency-dollar new-step-icon"></i>
+              <div class="new-step-text">
+                <h4>Get a price range back</h4>
+                <p>Before anyone shows up.</p>
+              </div>
+            </div>
+            <div class="new-step">
+              <i class="ti ti-tool new-step-icon"></i>
+              <div class="new-step-text">
+                <h4>A trusted pro shows up</h4>
+                <p>We match you. You don't chase anyone.</p>
+              </div>
+            </div>
+            <div class="new-step">
+              <i class="ti ti-shield new-step-icon"></i>
+              <div class="new-step-text">
+                <h4>Pay via Stripe when you say done</h4>
+                <p>Your card isn't charged until you confirm.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="comparison-footer-line">Just text (720) 821-3271 &mdash; that's it.</p>
     </div>
   </section>
 
@@ -459,7 +701,7 @@
   <section class="service-area">
     <div class="container">
       <h2 class="section-title">Service Area</h2>
-      <p>Serving Aurora, Centennial, Parker, Englewood, Littleton, Thornton, and surrounding Denver metro communities.</p>
+      <p>Aurora, Denver, and surrounding areas</p>
       <div class="trades-list" style="margin-top:16px;">
         <span class="zip-pill">80010</span>
         <span class="zip-pill">80011</span>
