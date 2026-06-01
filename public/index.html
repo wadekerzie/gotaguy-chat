@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GotaGuy - Home Repair by Text</title>
+  <meta name="description" content="GotaGuy connects homeowners with trusted local contractors. No calls, no hassle, just text.">
+  <meta property="og:title" content="GotaGuy - Home Repair by Text">
+  <meta property="og:description" content="GotaGuy connects homeowners with trusted local contractors. No calls, no hassle, just text.">
+  <meta property="og:type" content="website">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #1a1a1a; background: #fff; line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 600px; margin: 0 auto; padding: 0 20px; }
+
+    nav { border-bottom: 1px solid #e5e5e5; padding: 16px 0; }
+    nav .container { display: flex; align-items: center; }
+    .logo img { height: 48px; width: auto; display: block; }
+
+    .hero { padding: 56px 0 48px; text-align: center; }
+    .hero h1 { font-size: 2rem; font-weight: 700; line-height: 1.2; color: #1a1a1a; margin-bottom: 16px; }
+    .hero .subheadline { font-size: 1.1rem; color: #555; margin-bottom: 36px; line-height: 1.5; }
+
+    .zip-search { max-width: 440px; margin: 0 auto; }
+    .zip-row { display: flex; gap: 8px; margin-bottom: 12px; }
+    .zip-row input {
+      flex: 1; padding: 14px 16px; font-size: 1rem; border: 1.5px solid #ddd;
+      border-radius: 8px; outline: none;
+    }
+    .zip-row input:focus { border-color: #1D9E75; }
+    .zip-row button, .btn-primary {
+      padding: 14px 20px; background: #1D9E75; color: #fff; border: none;
+      border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer;
+      white-space: nowrap; transition: background 0.2s;
+    }
+    .zip-row button:hover, .btn-primary:hover { background: #178a65; }
+    .zip-message { font-size: 0.9rem; color: #e05c2a; font-weight: 500; margin-bottom: 20px; }
+
+    .waitlist-box {
+      background: #f9fafb; border: 1px solid #e5e5e5; border-radius: 12px;
+      padding: 24px; margin-top: 8px; text-align: left;
+    }
+    .waitlist-box h3 { font-size: 1rem; font-weight: 600; margin-bottom: 16px; color: #1a1a1a; }
+    .form-fields { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+    .form-fields input {
+      padding: 12px 14px; font-size: 0.95rem; border: 1.5px solid #ddd;
+      border-radius: 8px; outline: none; width: 100%;
+    }
+    .form-fields input:focus { border-color: #1D9E75; }
+    .success-message { font-size: 0.95rem; color: #1D9E75; font-weight: 500; text-align: center; padding: 8px 0; }
+
+    .section-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 24px; color: #1a1a1a; }
+    section { padding: 48px 0; }
+    .divider-section { border-top: 1px solid #eee; }
+
+    .steps { display: flex; flex-direction: column; gap: 28px; }
+    .step { display: flex; gap: 16px; align-items: flex-start; }
+    .step-icon {
+      flex-shrink: 0; width: 44px; height: 44px; background: #e8f5ef; color: #1D9E75;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 1.25rem; font-weight: 700;
+    }
+    .step-content h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 4px; }
+    .step-content p { font-size: 0.95rem; color: #555; line-height: 1.5; }
+
+    .contractor-teaser {
+      background: #fafafa; border-top: 1px solid #eee; border-bottom: 1px solid #eee;
+      padding: 32px 0;
+    }
+    .contractor-teaser h2 { font-size: 1.05rem; font-weight: 600; color: #555; margin-bottom: 8px; }
+    .contractor-teaser p { font-size: 0.95rem; color: #777; margin-bottom: 12px; line-height: 1.5; }
+    .contractor-teaser a { color: #1D9E75; text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+    .contractor-teaser a:hover { text-decoration: underline; }
+
+    footer { padding: 32px 0; text-align: center; }
+    .footer-links { font-size: 0.85rem; color: #aaa; margin-bottom: 8px; }
+    .footer-links a { color: #888; text-decoration: none; }
+    .footer-links a:hover { text-decoration: underline; }
+    .footer-copy { font-size: 0.8rem; color: #aaa; }
+
+    @media (min-width: 640px) {
+      .hero h1 { font-size: 2.4rem; }
+      .hero { padding: 72px 0 56px; }
+    }
+    @media (max-width: 480px) {
+      .zip-row { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <a class="logo" href="/">
+        <img src="/Gotaguy_Image.jpg" alt="GotaGuy" />
+      </a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Text-based home repair, on demand.</h1>
+      <p class="subheadline">GotaGuy connects homeowners with trusted local contractors. No calls, no hassle, just text.</p>
+
+      <div class="zip-search">
+        <div class="zip-row">
+          <input type="text" id="zip-input" placeholder="Enter your ZIP code" maxlength="5" inputmode="numeric" pattern="[0-9]*">
+          <button onclick="checkZip(document.getElementById('zip-input').value)">Find GotaGuy Near Me</button>
+        </div>
+        <p id="zip-not-found" style="display:none;" class="zip-message">GotaGuy isn't in your area yet, but we're growing fast.</p>
+
+        <div id="waitlist-form" style="display:none;" class="waitlist-box">
+          <h3>Get notified when we launch in your area</h3>
+          <form id="waitlist-submit">
+            <input type="hidden" name="form_type" value="waitlist">
+            <div class="form-fields">
+              <input type="text" name="first_name" placeholder="First Name" required>
+              <input type="text" name="zip" id="waitlist-zip" placeholder="ZIP Code" required>
+              <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;">Join Waitlist</button>
+          </form>
+          <p id="waitlist-success" style="display:none;" class="success-message">You're on the list. We'll reach out when GotaGuy comes to your area.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="divider-section">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-icon">1</div>
+          <div class="step-content">
+            <h3>Text us what's broken</h3>
+            <p>Describe the problem in plain English. No forms, no calls, no accounts.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-icon">2</div>
+          <div class="step-content">
+            <h3>Get a price range instantly</h3>
+            <p>We ask a few quick questions and give you a fair quote range for your area.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-icon">3</div>
+          <div class="step-content">
+            <h3>A trusted pro shows up</h3>
+            <p>We match you with a trusted local contractor. Your card is not charged until you confirm the work is complete.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="contractor-teaser">
+    <div class="container">
+      <h2>Are you a trusted local pro?</h2>
+      <p>We send pre-scoped jobs to your phone. You pick the ones you want. Same-day payment.</p>
+      <a href="/contractors">Learn how GotaGuy works for contractors &rarr;</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p class="footer-links"><a href="/contractors">For Contractors</a></p>
+      <p class="footer-copy">&copy; 2026 GotaGuy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const MARKETS = {
+      dallas: ["75069","75070","75071","75072","75002","75013","75023","75024","75025","75026","75074","75075","75086","75093","75094","75078","75009","75098","75048","75409","75454","75407","75166","75080","75082"],
+      denver: ["80010","80011","80012","80013","80014","80015","80016","80017","80018","80019","80040","80041","80042","80044","80045","80046","80047","80121","80108"]
+    };
+
+    function checkZip(zip) {
+      for (const [market, zips] of Object.entries(MARKETS)) {
+        if (zips.includes(zip.trim())) {
+          window.location.href = '/' + market;
+          return;
+        }
+      }
+      document.getElementById('waitlist-form').style.display = 'block';
+      document.getElementById('zip-not-found').style.display = 'block';
+      document.getElementById('waitlist-zip').value = zip.trim();
+    }
+
+    document.getElementById('zip-input').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') checkZip(this.value);
+    });
+
+    document.getElementById('waitlist-submit').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+      try {
+        const response = await fetch('https://formspree.io/f/mvzdeodn', {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          form.style.display = 'none';
+          document.getElementById('waitlist-success').style.display = 'block';
+        }
+      } catch (err) {
+        // fallback: submit normally
+        form.submit();
+      }
+    });
+  </script>
+
+</body>
+</html>
