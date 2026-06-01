@@ -74,8 +74,11 @@
     }
     .contractor-teaser h2 { font-size: 1.05rem; font-weight: 600; color: #555; margin-bottom: 8px; }
     .contractor-teaser p { font-size: 0.95rem; color: #777; margin-bottom: 12px; line-height: 1.5; }
-    .contractor-teaser a { color: #1D9E75; text-decoration: none; font-size: 0.95rem; font-weight: 500; }
-    .contractor-teaser a:hover { text-decoration: underline; }
+    .contractor-teaser .btn-contractor {
+      display: inline-block; margin-top: 4px; padding: 12px 20px; background: #1D9E75; color: #fff;
+      border-radius: 8px; font-size: 0.95rem; font-weight: 600; text-decoration: none; transition: background 0.2s;
+    }
+    .contractor-teaser .btn-contractor:hover { background: #178a65; }
 
     footer { padding: 32px 0; text-align: center; }
     .footer-links { font-size: 0.85rem; color: #aaa; margin-bottom: 8px; }
@@ -162,15 +165,14 @@
 
   <div class="contractor-teaser">
     <div class="container">
-      <h2>Are you a trusted local pro?</h2>
-      <p>We send pre-scoped jobs to your phone. You pick the ones you want. Same-day payment.</p>
-      <a href="/contractors">Learn how GotaGuy works for contractors &rarr;</a>
+      <h2>Are you a local pro looking for more work?</h2>
+      <p>We send pre-scoped jobs to your phone. You pick the ones you want. Same-day payment to your debit card.</p>
+      <a class="btn-contractor" href="/contractors">See How It Works for Contractors</a>
     </div>
   </div>
 
   <footer>
     <div class="container">
-      <p class="footer-links"><a href="/contractors">For Contractors</a></p>
       <p class="footer-copy">&copy; 2026 GotaGuy. All rights reserved.</p>
     </div>
   </footer>
