@@ -4,7 +4,7 @@
 This is the gotaguy.chat multi-market landing page. It serves multiple city markets from a single Vercel deployment. There is no app, no framework, no build step. Everything is plain HTML files served statically.
 
 ## How deployment works
-This project deploys directly to Vercel. Vercel watches this project folder and picks up saved changes automatically. Do not run git commands. Do not push to GitHub. Do not look for external repos. Save the file - Vercel handles the rest.
+This project deploys directly to Vercel. Deploy by committing and pushing to the main branch on GitHub. Vercel is connected to the wadekerzie/gotaguy-chat repo and auto-deploys on push. Do not use vercel --prod from this directory.
 
 ## Folder structure
 All market pages live inside public/. Each market has its own subfolder:
