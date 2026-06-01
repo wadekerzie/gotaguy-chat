@@ -18,13 +18,13 @@
     }
     .container { max-width: 600px; margin: 0 auto; padding: 0 20px; }
 
-    nav { border-bottom: 1px solid #e5e5e5; padding: 16px 0; }
+    nav { border-bottom: 1px solid #e5e5e5; padding: 10px 0; }
     nav .container { display: flex; align-items: center; }
     .logo img { height: 48px; width: auto; display: block; }
 
-    .hero { padding: 40px 0 8px; text-align: center; }
-    .hero h1 { font-size: 2rem; font-weight: 700; line-height: 1.2; color: #1a1a1a; margin-bottom: 16px; }
-    .hero .subheadline { font-size: 1.1rem; color: #555; margin-bottom: 16px; line-height: 1.5; }
+    .hero { padding: 16px 0 4px; text-align: center; }
+    .hero h1 { font-size: 2rem; font-weight: 700; line-height: 1.2; color: #1a1a1a; margin-bottom: 8px; }
+    .hero .subheadline { font-size: 1.1rem; color: #555; margin-bottom: 0; line-height: 1.5; }
 
     .zip-search { max-width: 440px; margin: 0 auto; }
     .zip-row { display: flex; gap: 8px; margin-bottom: 12px; }
@@ -88,14 +88,14 @@
 
     @media (min-width: 640px) {
       .hero h1 { font-size: 2.4rem; }
-      .hero { padding: 48px 0 8px; }
+      .hero { padding: 20px 0 4px; }
     }
     @media (max-width: 480px) {
       .zip-row { flex-direction: column; }
     }
 
     /* COMPARISON SECTION */
-    .comparison-section { padding: 24px 0 48px; border-top: 1px solid #eee; }
+    .comparison-section { padding: 12px 0 48px; }
     .comparison-container { max-width: 880px; margin: 0 auto; padding: 0 20px; }
     .comparison-headline { font-size: 1.4rem; font-weight: 700; color: #1a1a1a; margin-bottom: 12px; text-align: center; }
     .comparison-subhead { font-size: 0.95rem; color: #555; margin-bottom: 32px; text-align: center; line-height: 1.6; max-width: 620px; margin-left: auto; margin-right: auto; }
@@ -138,8 +138,8 @@
 
   <section class="hero">
     <div class="container">
-      <h1>Text-based home repair, on demand.</h1>
-      <p class="subheadline">GotaGuy connects homeowners with trusted local contractors. No calls, no hassle, just text.</p>
+      <h1>Don't overthink it.</h1>
+      <p class="subheadline">Home repairs are a text away. Find your market below.</p>
     </div>
   </section>
 
@@ -176,6 +176,13 @@
             <p>No app. No account. No password. Ever.</p>
           </div>
           <div class="new-steps">
+            <div class="new-step">
+              <i class="ti ti-message new-step-icon"></i>
+              <div class="new-step-text">
+                <h4>Text one number in your local market</h4>
+                <p>Find your market number with the ZIP search below.</p>
+              </div>
+            </div>
             <div class="new-step">
               <i class="ti ti-currency-dollar new-step-icon"></i>
               <div class="new-step-text">
