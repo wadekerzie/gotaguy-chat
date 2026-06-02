@@ -295,6 +295,23 @@
       text-decoration: underline;
     }
 
+    .contractors .btn-contractor {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 12px 20px;
+      background: #1D9E75;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .contractors .btn-contractor:hover {
+      background: #178a65;
+    }
+
     /* FOOTER */
     footer {
       padding: 32px 0;
@@ -726,15 +743,15 @@
       <div class="trust-list">
         <div class="trust-item">
           <div class="trust-check">&#10003;</div>
-          <span>Every pro is handpicked by our team</span>
+          <span>Every pro is handpicked by our team and shows up ready to work</span>
         </div>
         <div class="trust-item">
           <div class="trust-check">&#10003;</div>
-          <span>Your card is authorized upfront and captured only when you say the job is done</span>
+          <span>You pay when the job is done. Not before. Payment processed securely through Stripe.</span>
         </div>
         <div class="trust-item">
           <div class="trust-check">&#10003;</div>
-          <span>Local team, AI-powered response, real contractors</span>
+          <span>Local pros. Real jobs. Real results.</span>
         </div>
       </div>
       <p class="stripe-badge">Payment processing provided by <span style="color:#635BFF;font-weight:600;">Stripe</span></p>
@@ -744,16 +761,16 @@
   <!-- FOR CONTRACTORS -->
   <div class="contractors">
     <div class="container">
-      <h2>Are you a trusted tradesperson?</h2>
-      <p>We send pre-scoped jobs to your phone. You pick the ones you want.</p>
-      <p><a href="/denver/how-it-works">See how it works for contractors</a></p>
+      <h2>Are you a local pro looking for more work?</h2>
+      <p>We send pre-scoped jobs to your phone. You pick the ones you want. Same-day payment to your debit card.</p>
+      <a class="btn-contractor" href="/contractors">See How It Works for Contractors</a>
     </div>
   </div>
 
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <p class="footer-name">GotaGuy &ndash; Aurora, CO</p>
+      <p class="footer-name">GotaGuy - Aurora, CO</p>
       <p class="footer-contact">Questions? Text us at +1 (720) 821-3271</p>
       <p class="footer-links"><a href="/denver/privacy">Privacy Policy</a> &middot; <a href="/denver/terms">Terms &amp; Conditions</a> &middot; <a href="/denver/contractor-terms">Contractor Terms</a></p>
       <p class="footer-copy">&copy; 2026 GotaGuy. All rights reserved.</p>
