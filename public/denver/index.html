@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GotaGuy – Home Repair in Aurora CO | Just Text Us</title>
-  <meta name="description" content="Need something fixed in Aurora or the Denver metro? Text GotaGuy. Electrical, plumbing, HVAC, appliances, pool equipment, pest control, drywall, painting and more. Trusted tradespeople, same-day repairs, pay only when done.">
+  <meta name="description" content="Need something fixed in Aurora or the Denver metro? Text GotaGuy. Electrical, plumbing, HVAC, appliances, pool equipment, pest control, drywall, painting and more. Trusted local pros, same-day repairs, pay only when done.">
   <meta property="og:title" content="GotaGuy – Home Repair in Aurora CO | Just Text Us">
-  <meta property="og:description" content="Need something fixed in Aurora or the Denver metro? Text GotaGuy. Electrical, plumbing, HVAC, appliances, pool equipment, pest control, drywall, painting and more. Trusted tradespeople, same-day repairs, pay only when done.">
+  <meta property="og:description" content="Need something fixed in Aurora or the Denver metro? Text GotaGuy. Electrical, plumbing, HVAC, appliances, pool equipment, pest control, drywall, painting and more. Trusted local pros, same-day repairs, pay only when done.">
   <meta property="og:type" content="website">
   <style>
     *, *::before, *::after {
@@ -117,6 +117,51 @@
       margin-top: 12px;
       font-size: 0.875rem;
       color: #888;
+    }
+
+    .cta-reassure {
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .cta-number {
+      color: #1D9E75;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    /* STICKY MOBILE CTA */
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+      background: rgba(255, 255, 255, 0.97);
+      border-top: 1px solid #e5e5e5;
+      z-index: 100;
+    }
+
+    .sticky-cta a {
+      display: block;
+      padding: 14px 20px;
+      background: #1D9E75;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(29, 158, 117, 0.3);
+    }
+
+    @media (max-width: 639px) {
+      .sticky-cta.visible {
+        display: block;
+      }
     }
 
     /* SECTIONS */
@@ -609,11 +654,12 @@
     <div class="container">
       <p class="hero-eyebrow">Aurora &amp; Denver Metro</p>
       <h1>You've been texting for 20 years.<br><span style="color:#1D9E75;">Now use it to get something fixed.</span></h1>
-      <p class="subheadline">Home repairs - quote in 90 seconds, trusted pros dispatched on your schedule, pay when the job is done. 100% guaranteed.</p>
-      <p class="only-statement">Nothing else does this. GotaGuy is <strong style="color:#1D9E75;">the only one</strong> - a home repair service that works entirely by text. No app. No account. No password. No juggling phone calls or bids. Just text - and it's handled.</p>
-      <a class="cta-button" href="sms:+17208213271&body=Hi, I need something fixed!">Text GotaGuy Now</a>
-      <p class="cta-sub">Or text (720) 821-3271 directly</p>
+      <p class="subheadline">Text us what's broken. A quote comes back in about 90 seconds, and you pay only when the job is done. 100% guaranteed.</p>
+      <a class="cta-button" href="sms:+17208213271?&amp;body=Hi%2C%20I%20need%20something%20fixed!">Text GotaGuy Now</a>
+      <p class="cta-reassure">Tapping opens your Messages app with the text already written. Just hit send. No app. No account. No password.</p>
+      <p class="cta-sub">Or text <a class="cta-number" href="sms:+17208213271?&amp;body=Hi%2C%20I%20need%20something%20fixed!">(720) 821-3271</a> directly</p>
       <p class="cta-sub">On a computer? Text (720) 821-3271 from your phone and we'll take it from there.</p>
+      <p class="only-statement">Nothing else does this. GotaGuy is <strong style="color:#1D9E75;">the only one</strong> - a home repair service that works entirely by text. No app. No account. No password. No juggling phone calls or bids. Just text - and it's handled.</p>
       <a class="cta-secondary" href="/denver/how-it-works">Contractors: click here</a>
     </div>
   </section>
@@ -846,6 +892,26 @@
       <p class="footer-copy">&copy; 2026 GotaGuy. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- STICKY MOBILE CTA (appears after the hero button scrolls out of view) -->
+  <div class="sticky-cta">
+    <a href="sms:+17208213271?&amp;body=Hi%2C%20I%20need%20something%20fixed!">Text GotaGuy Now</a>
+  </div>
+
+  <script>
+    (function () {
+      var heroCta = document.querySelector('.cta-button');
+      var bar = document.querySelector('.sticky-cta');
+      if (!heroCta || !bar) return;
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (entries) {
+          bar.classList.toggle('visible', !entries[0].isIntersecting);
+        }).observe(heroCta);
+      } else {
+        bar.classList.add('visible');
+      }
+    })();
+  </script>
 
 </body>
 </html>
