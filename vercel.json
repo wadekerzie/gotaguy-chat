@@ -13,6 +13,7 @@
     { "src": "/denver/privacy", "dest": "public/denver/privacy.html" },
     { "src": "/denver/contractor-terms", "dest": "public/denver/contractor-terms.html" },
     { "src": "/contractors", "dest": "public/contractors.html" },
+    { "src": "/job/(.*)", "dest": "https://gotaguy-production.up.railway.app/job/$1" },
     { "src": "/(.*)", "dest": "public/$1" }
   ]
 }
