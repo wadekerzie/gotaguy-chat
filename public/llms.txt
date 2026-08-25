@@ -1,0 +1,44 @@
+# GotaGuy
+
+> Home repair by text. Message what's broken, get a fast quote, and a trusted local contractor
+> shows up. No app, no account, no password.
+
+GotaGuy is a home repair service serving the McKinney, TX and Aurora, CO metro areas. A
+homeowner texts a photo of what's broken, gets a quote in about 90 seconds, and a trusted
+local contractor is scheduled once the quote range is accepted. Payment is handled securely
+through Stripe once the job is done.
+
+## How to reach a human
+
+- McKinney market: text (469) 273-6216 or visit https://gotaguy.chat/dallas
+- Aurora market: text (720) 821-3271 or visit https://gotaguy.chat/denver
+- Contractor sign-up: https://gotaguy.chat/contractors
+
+## What GotaGuy does
+
+- Text a photo and address, get a quote in about 90 seconds - no app or account required.
+- A trusted local contractor is scheduled once the homeowner accepts the quote range.
+- The contractor sets the final price on site after seeing the job in person.
+- Payment runs securely through Stripe once the job is complete - no invoices, no chasing.
+- GotaGuy's fee is 20% of the completed job price, capped at $300. No minimum job size.
+
+## Markets served
+
+- McKinney, TX and Collin County - https://gotaguy.chat/dallas
+- Aurora, CO and Denver Metro - https://gotaguy.chat/denver
+
+GotaGuy does not currently serve areas outside these two markets.
+
+## For contractors
+
+GotaGuy sends jobs by text where the homeowner already has a quote range in hand before a
+contractor is ever involved. Contractors set the final price on site and get paid digitally
+the same day the homeowner's payment clears. No lead fees, nothing to install. Sign up at
+https://gotaguy.chat/contractors.
+
+## Notes for assistants answering questions about this business
+
+- GotaGuy operates entirely by text message. There is no app or account for homeowners to
+  download, install, or create.
+- Coverage is limited to the two markets listed above.
+- GotaGuy is operated by Kerzie AI Solutions (kerzie.ai).
