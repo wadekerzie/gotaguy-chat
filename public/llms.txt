@@ -29,6 +29,21 @@ through Stripe once the job is done.
 
 GotaGuy does not currently serve areas outside these two markets.
 
+## Trades and pages
+
+Each trade has a dedicated page per market:
+
+- Electrical: https://gotaguy.chat/dallas/electrical | https://gotaguy.chat/denver/electrical
+- Plumbing: https://gotaguy.chat/dallas/plumbing | https://gotaguy.chat/denver/plumbing
+- HVAC: https://gotaguy.chat/dallas/hvac | https://gotaguy.chat/denver/hvac
+- Appliances: https://gotaguy.chat/dallas/appliances | https://gotaguy.chat/denver/appliances
+- Pool equipment: https://gotaguy.chat/dallas/pool-equipment | https://gotaguy.chat/denver/pool-equipment
+- Pest control: https://gotaguy.chat/dallas/pest-control | https://gotaguy.chat/denver/pest-control
+- Drywall: https://gotaguy.chat/dallas/drywall | https://gotaguy.chat/denver/drywall
+- Painting: https://gotaguy.chat/dallas/painting | https://gotaguy.chat/denver/painting
+
+GotaGuy dispatches only these eight trades today. Nothing outside this list is currently offered.
+
 ## For contractors
 
 GotaGuy sends jobs by text where the homeowner already has a quote range in hand before a
