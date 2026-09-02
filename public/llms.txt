@@ -29,6 +29,14 @@ through Stripe once the job is done.
 
 GotaGuy does not currently serve areas outside these two markets.
 
+## One number for every trade
+
+GotaGuy works like a general contractor for home repair: one text number covers every trade
+listed below. The homeowner never has to figure out whether the job is plumbing, electrical,
+or drywall - they text what is broken, GotaGuy identifies the trade, and the right local
+contractor is scheduled on the homeowner's schedule. Same number for a leak on Monday and a
+drywall repair in the spring. Text only, start to finish.
+
 ## Trades and pages
 
 Each trade has a dedicated page per market:
