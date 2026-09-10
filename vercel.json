@@ -1,20 +1,71 @@
 {
   "version": 2,
-  "builds": [{ "src": "public/**", "use": "@vercel/static" }],
+  "builds": [
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
+    }
+  ],
   "routes": [
-    { "src": "/dallas", "dest": "public/dallas/index.html" },
-    { "src": "/dallas/how-it-works", "dest": "public/dallas/how-it-works.html" },
-    { "src": "/dallas/terms", "dest": "public/dallas/terms.html" },
-    { "src": "/dallas/privacy", "dest": "public/dallas/privacy.html" },
-    { "src": "/dallas/contractor-terms", "dest": "public/dallas/contractor-terms.html" },
-    { "src": "/denver", "dest": "public/denver/index.html" },
-    { "src": "/denver/how-it-works", "dest": "public/denver/how-it-works.html" },
-    { "src": "/denver/terms", "dest": "public/denver/terms.html" },
-    { "src": "/denver/privacy", "dest": "public/denver/privacy.html" },
-    { "src": "/denver/contractor-terms", "dest": "public/denver/contractor-terms.html" },
-    { "src": "/contractors", "dest": "public/contractors.html" },
-    { "src": "/job/(.*)", "dest": "https://gotaguy-production.up.railway.app/job/$1" },
-    { "src": "/(dallas|denver)/([a-z0-9-]+)", "dest": "public/$1/$2.html" },
-    { "src": "/(.*)", "dest": "public/$1" }
+    {
+      "src": "/dallas",
+      "dest": "public/dallas/index.html"
+    },
+    {
+      "src": "/dallas/how-it-works",
+      "dest": "public/dallas/how-it-works.html"
+    },
+    {
+      "src": "/dallas/terms",
+      "dest": "public/dallas/terms.html"
+    },
+    {
+      "src": "/dallas/privacy",
+      "dest": "public/dallas/privacy.html"
+    },
+    {
+      "src": "/dallas/contractor-terms",
+      "dest": "public/dallas/contractor-terms.html"
+    },
+    {
+      "src": "/denver",
+      "dest": "public/denver/index.html"
+    },
+    {
+      "src": "/denver/how-it-works",
+      "dest": "public/denver/how-it-works.html"
+    },
+    {
+      "src": "/denver/terms",
+      "dest": "public/denver/terms.html"
+    },
+    {
+      "src": "/denver/privacy",
+      "dest": "public/denver/privacy.html"
+    },
+    {
+      "src": "/denver/contractor-terms",
+      "dest": "public/denver/contractor-terms.html"
+    },
+    {
+      "src": "/newark",
+      "dest": "public/newark/index.html"
+    },
+    {
+      "src": "/contractors",
+      "dest": "public/contractors.html"
+    },
+    {
+      "src": "/job/(.*)",
+      "dest": "https://gotaguy-production.up.railway.app/job/$1"
+    },
+    {
+      "src": "/(dallas|denver|newark)/([a-z0-9-]+)",
+      "dest": "public/$1/$2.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "public/$1"
+    }
   ]
 }
