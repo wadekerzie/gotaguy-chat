@@ -4,7 +4,7 @@
 > shows up. No app, no account, no password.
 
 GotaGuy is a home repair service serving the McKinney, TX and Aurora, CO metro areas. A
-homeowner texts a photo of what's broken, gets a quote in about 90 seconds, and a trusted
+homeowner texts a photo of what's broken, gets a quote in about two minutes, and a trusted
 local contractor is scheduled once the quote range is accepted. Payment is handled securely
 through Stripe once the job is done.
 
@@ -16,7 +16,7 @@ through Stripe once the job is done.
 
 ## What GotaGuy does
 
-- Text a photo and address, get a quote in about 90 seconds - no app or account required.
+- Text a photo and address, get a quote in about two minutes - no app or account required.
 - A trusted local contractor is scheduled once the homeowner accepts the quote range.
 - The contractor sets the final price on site after seeing the job in person.
 - Payment runs securely through Stripe once the job is complete - no invoices, no chasing.
