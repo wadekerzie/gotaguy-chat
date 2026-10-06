@@ -36,15 +36,19 @@ When adding a new market, copy the dallas/ folder as the template, rename it, an
 
 ## Product facts (locked)
 - Fee structure: 20% per completed job. No minimum. $300 maximum cap.
-- Payment flow: when the homeowner confirms the job is complete, GotaGuy sends a payment link. Once the homeowner pays, the contractor receives their 80% on their debit card the same day. No invoices, no chasing.
+- Payment flow: when the homeowner confirms the job is complete, GotaGuy sends a payment link. GotaGuy sends the contractor's 80% the day the homeowner pays, and it lands on their debit card within 1-2 business days (the transfer is immediate; bank arrival follows Stripe's payout timing). Customer-facing line: "We send your 80% the day the homeowner pays. It lands on your debit card within 1-2 business days." Never say "same day" for the contractor's money. No invoices, no chasing.
 
 ## Key messaging (locked)
-- Primary homeowner promise: "Get a quote in 90 seconds." On the hub a homeowner enters their ZIP; on a market page they text the market number.
+- Primary homeowner promise: "Get a price range in under 2 minutes." On the hub a homeowner enters their ZIP; on a market page they text the market number.
 - Primary contractor promise: "Show up to jobs where the homeowner already has a quote." The homeowner agrees to a quote range before the contractor is involved, and the contractor sets the final price on site.
+- Locked claims (Wade 2026-10-06):
+  - Homeowner price-range response time is always "under 2 minutes" (never 90 seconds, about 2 minutes, or two minutes). The contractor setup claim ("Setup takes about 90 seconds from your phone") is a separate claim and stays.
+  - Guarantee: "100% guaranteed" means that if the first repair is not right, GotaGuy sends another contractor to make it right. GotaGuy does not warranty the contractor's workmanship; those are different things. The terms pages say so (dallas/terms.html, denver/terms.html, updated 2026-10-06). Homeowner explainer line when needed: "If the repair isn't right, we send another pro to make it right."
+  - Contractor pay timing: "We send your 80% the day the homeowner pays. It lands on your debit card within 1-2 business days."
 
 ## Pages and sync state
 Six pages make up the site, and they are currently all in sync:
-- public/index.html - the hub at gotaguy.chat/. ZIP router: in-area ZIPs redirect to /dallas or /denver, out-of-area shows a waitlist. Leads with "Get a quote in 90 seconds."
+- public/index.html - the hub at gotaguy.chat/. ZIP router: in-area ZIPs redirect to /dallas or /denver, out-of-area shows a waitlist. Leads with "Get a free quote via text in under 2 minutes."
 - public/dallas/index.html and public/denver/index.html - homeowner market landing pages. Identical to each other except market-specific values.
 - public/contractors.html - market-neutral contractor page. Two-card CTA: Wade for McKinney (214) 668-7986, Aaron for Aurora (720) 749-9474.
 - public/dallas/how-it-works.html and public/denver/how-it-works.html - market contractor pages. Identical to each other except the market CTA contact (Wade vs Aaron, same numbers as above).
