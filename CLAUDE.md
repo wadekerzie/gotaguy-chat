@@ -42,7 +42,7 @@ When adding a new market, copy the dallas/ folder as the template, rename it, an
 - Primary homeowner promise: "Get a price range in under 2 minutes." On the hub a homeowner enters their ZIP; on a market page they text the market number.
 - Primary contractor promise: "Show up to jobs where the homeowner already has a quote." The homeowner agrees to a quote range before the contractor is involved, and the contractor sets the final price on site.
 - Locked claims (Wade 2026-10-06):
-  - Homeowner price-range response time is always "under 2 minutes" (never 90 seconds, about 2 minutes, or two minutes). The contractor setup claim ("Setup takes about 90 seconds from your phone") is a separate claim and stays.
+  - Quote speed is NOT locked language: "90 seconds" and "under 2 minutes" are both fine (Wade 2026-10-06). Same for contractor setup time. Do not run sweeps over this wording.
   - Guarantee: "100% guaranteed" means that if the first repair is not right, GotaGuy sends another contractor to make it right. GotaGuy does not warranty the contractor's workmanship; those are different things. The terms pages say so (dallas/terms.html, denver/terms.html, updated 2026-10-06). Homeowner explainer line when needed: "If the repair isn't right, we send another pro to make it right."
   - Contractor pay timing: "We send your 80% the day the homeowner pays. It lands on your debit card within 1-2 business days."
 
